@@ -5,10 +5,18 @@ public class HomeWorkApp2 {
         int a = 10;
         int b = 20;
         String line = "Текст";
+        int year = 2022;
         System.out.println("Задание № 1 " + checkSum(a,b));
         numberSign( a);
         System.out.println("Задание № 3 " + examinationNumbers( b));
         printingWords(a,line);
+        if (leapYearCheck(year) == true){
+            System.out.println("Високосный год");
+
+        }
+        else {
+            System.out.println("Не високосный год");
+        }
 
 
     }
@@ -52,6 +60,21 @@ public class HomeWorkApp2 {
 
     }
     // Задание 5
+    public static boolean leapYearCheck(int year ){
+        if(year % 4 == 0){
+            return true;
+
+        } else if( year % 100 ==0){
+            return false;
+
+        }
+        else if( year % 400 == 0)
+            return true;
+        else
+
+        return false;
+    }
+
 
 
 }
