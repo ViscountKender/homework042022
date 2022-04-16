@@ -5,9 +5,9 @@ public class HomeWorkApp2 {
         int a = 10;
         int b = 20;
         String line = "Текст";
-        System.out.println("Задание №1" + checkSum(a,b));
+        System.out.println("Задание № 1 " + checkSum(a,b));
         numberSign( a);
-        System.out.println("Задание №3" + examinationNumbers( b));
+        System.out.println("Задание № 3 " + examinationNumbers( b));
         printingWords(a,line);
 
 
@@ -26,7 +26,7 @@ public class HomeWorkApp2 {
     // Задание 2
     public static void numberSign(int a) {
         if (a >= 0) {
-            System.out.println("Число положительное");
+            System.out.println("Число положительное" );
         } else {
             System.out.println("Число отрицательное");
         }
@@ -44,7 +44,7 @@ public class HomeWorkApp2 {
 
     }
 
-    // задание 4
+    // Задание 4
     public static void printingWords(int b, String line) {
         for (int i = 0; i < b; i++) {
             System.out.println(line);
@@ -55,4 +55,5 @@ public class HomeWorkApp2 {
 
 
 }
+
 
