@@ -41,7 +41,7 @@ public class HomeWorkApp3 {
         int[][] arr = new int[6][6];
 
         diagonalArray(arr);
-        System.out.println("Задание № 4");
+        System.out.println("Задание № 5");
         int len = 0;
         int initialValue = 0;
 
