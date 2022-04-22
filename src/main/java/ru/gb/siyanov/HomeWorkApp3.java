@@ -41,8 +41,17 @@ public class HomeWorkApp3 {
         int[][] arr = new int[6][6];
 
         diagonalArray(arr);
+        System.out.println("Задание № 4");
+        int len = 0;
+        int initialValue = 0;
+
+        arrayByGivenVariables(len, initialValue);
 
         }
+    public static void arrayByGivenVariables(int len, int initialValue){
+
+    }
+
     public static void multiplicationInAnArray(int[] list){
         System.out.println(Arrays.toString(list));
 
