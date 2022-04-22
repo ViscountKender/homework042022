@@ -22,7 +22,7 @@ public class HomeWorkApp3 {
         System.out.println("Задание №2");
 
         // задание 2
-        int hundred[] = new int[100];
+        int[] hundred = new int[100];
         for (int i = 0; i < hundred.length; i++) {
             hundred[i]=i+1;
 
@@ -38,7 +38,7 @@ public class HomeWorkApp3 {
 
         // задание 4
 
-        int arr[][] = new int[6][6];
+        int[][] arr = new int[6][6];
 
         diagonalArray(arr);
 
