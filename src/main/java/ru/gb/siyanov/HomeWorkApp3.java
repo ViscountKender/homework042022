@@ -50,6 +50,10 @@ public class HomeWorkApp3 {
 
         // задание 6
         int[] d = new int[6];
+        for (int i = 0; i < d.length; i++) {
+            d[i] = (int) (Math.random() * 10);
+
+        }
         minimumAndMaximum(d);
         System.out.println("Задание 7");
         // задание 7
@@ -60,6 +64,9 @@ public class HomeWorkApp3 {
         }else {
             System.out.println("массив:" + Arrays.toString(b) + " Нет равных частей");
         }
+        // задание 8
+        int n = 3;
+        //shiftOfTheArray(d, n);
 
 
     }
@@ -108,10 +115,6 @@ public class HomeWorkApp3 {
 
     // задание 6
     public static void minimumAndMaximum(int[] d) {
-        for (int i = 0; i < d.length; i++) {
-            d[i] = (int) (Math.random() * 10);
-
-        }
         int max = d[0];
         int min = d[0];
         System.out.println(Arrays.toString(d));
@@ -151,14 +154,30 @@ public class HomeWorkApp3 {
         }
             return result;
 
+        }
+        // задание 8
+    public static void shiftOfTheArray(int[] d){
+        int n = 3;
+        if(n > d.length){
+            System.out.println("сдвиг за пределы масива");
 
         }
+
+        for (int i = 0; i < d[i]; i++) {
+
+
+        }
+
+
+    }
+
 
 
 
 
 
 }
+
 
 
 
