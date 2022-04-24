@@ -51,6 +51,16 @@ public class HomeWorkApp3 {
         // задание 6
         int[] d = new int[6];
         minimumAndMaximum(d);
+        System.out.println("Задание 7");
+        // задание 7
+        // Можно в качестве аргумента взять массив d из 6 задания
+        int[] b = {2, 5, 1, 2, 1, 4, 5, 2};
+        if(sumOfTheNumbersInTheArray( b)){
+            System.out.println("массив:" + Arrays.toString(b) + " Есть равные части");
+        }else {
+            System.out.println("массив:" + Arrays.toString(b) + " Нет равных частей");
+        }
+
 
     }
 
@@ -91,9 +101,7 @@ public class HomeWorkApp3 {
 
     public static int[] arrayByGivenVariables(int len, int initialValue) {
         int[] ar = new int[len];
-        for (int i = 0; i < ar.length; i++) {
-            ar[i] = initialValue;
-        }
+        Arrays.fill(ar, initialValue);
         return ar;
 
     }
@@ -122,13 +130,29 @@ public class HomeWorkApp3 {
         System.out.println("Минимальное число: " + min);
 
     }
-
+    //int[] b = {2, 5, 1, 2, 1, 4, 5, 2};
     //задание 7
-    //public static boolean sumOfTheNumbersInTheArray(int[] b){
+    public static boolean sumOfTheNumbersInTheArray(int[] b){
+        int sumArray= 0;
+        int sum = 0;
+        boolean result = true;
+        for (int k : b) {
+            sumArray += k;
+        }
+        for (int i : b) {
+            sumArray = sumArray - i;
+            sum = sum + i;
+            if (sum == sumArray) {
+                result = true;
+                break;
+            } else {
+                result = false;
+            }
+        }
+            return result;
 
 
-   // }
-
+        }
 
 
 
