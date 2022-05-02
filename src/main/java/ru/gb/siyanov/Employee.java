@@ -8,6 +8,7 @@ public class Employee {
     private String phone;
     private long salary;
     private int age;
+
     public Employee(String firstName,String lastName,String Position,String email,String phone,long salary,int age){
         this.firstName = firstName;
         this.lastName = lastName;
@@ -17,6 +18,12 @@ public class Employee {
         this.salary = salary;
         this.age = age;
     }
+    public void InformationAboutObject() {
+        System.out.println("Имя: " + this.firstName + "; " + "Фамилия: " + this.lastName + "; " + "Должность: " + this.Position + "; "
+        + "email: " + this.email + "; " + "Телефон: " + this.phone + "; " + "Зарплата: " + this.salary + "; " + "Возраст: " + this.age);
+
+    }
+
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
@@ -72,28 +79,28 @@ public class Employee {
         }
 
     }
+    public String ToString(){
+        return (firstName + lastName + Position + email + phone + salary + age );
+    }
+
+
 
     public static void main(String[] args) {
-//        String a;
-//        String b;
-//        String c;
-//        String d;
-//        String e;
-//        long f;
-//        int g;
-//        InformationAboutObject( a, b, c, d, e,f,g);
-        }
 
-//    public static void    InformationAboutObject() {
-//        System.out.println("a = " + a);
-//        System.out.println("b = " + b);
-//        System.out.println("c = " + c);
-//        System.out.println("d = " + d);
-//        System.out.println("e = " + e);
-//        System.out.println("f = " + f);
-//        System.out.println("g = " + g);
-//    }
+
+
+
+    }
+
+
+
 
 
 
 }
+
+
+
+
+
+
