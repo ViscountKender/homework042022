@@ -5,10 +5,19 @@ public class Plate {
         this.food = food;
     }
     public void decreaseFood(int n) {
-        if (n >= 0 && food > n ) {
+        for (int i = 0; i < food; i++) {
             food -= n;
 
         }
+
+        }
+
+    public int getFood() {
+        return food;
+    }
+
+    public void setFood(int food) {
+        this.food = food;
     }
 
     private int food;
@@ -19,4 +28,10 @@ public class Plate {
     }
 }
 
-
+//if (n >= 0 && food >= n) {
+//        food -= n;
+//        } else if ( food <= 0){
+//        System.out.println("Кот голодный");
+//        }
+//
+//        }

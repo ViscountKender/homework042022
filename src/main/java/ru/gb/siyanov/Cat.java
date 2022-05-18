@@ -37,7 +37,12 @@ public class Cat {
     public void eat(Plate n ) {
 
         n.decreaseFood(appetite);
-        System.out.println("Голодный кот " + name + " поел " + appetite + " кусочков еды, теперь он не голодный");
+        if ()
+            System.out.println("Голодный кот " + name + " поел " + appetite + " кусочков еды, теперь он не голодный");
+        }
+//        else {
+//            System.out.println("Котик голодный");
+//        }
     }
 }
 
