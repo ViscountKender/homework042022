@@ -1,16 +1,11 @@
 package ru.gb.siyanov;
 
 public class Plate {
+    public int food;
     public Plate(int food) {
         this.food = food;
     }
-    public void decreaseFood(int n) {
-        for (int i = 0; i < food; i++) {
-            food -= n;
 
-        }
-
-        }
 
     public int getFood() {
         return food;
@@ -20,7 +15,16 @@ public class Plate {
         this.food = food;
     }
 
-    private int food;
+    public void decreaseFood(int n) {
+
+            food -= n;
+
+    }
+    public void increaseFood(int x){
+        food += x;
+    }
+
+
 
     public void info() {
         System.out.println("Еды в миске: " + food);
@@ -28,10 +32,4 @@ public class Plate {
     }
 }
 
-//if (n >= 0 && food >= n) {
-//        food -= n;
-//        } else if ( food <= 0){
-//        System.out.println("Кот голодный");
-//        }
-//
-//        }
+
